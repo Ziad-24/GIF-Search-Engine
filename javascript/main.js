@@ -1,7 +1,7 @@
 // grab
 var button = document.getElementById('button');
 var inputt = document.getElementById('input');
-var url = "http://api.giphy.com/v1/gifs/search?q="+inputt.value+"&api_key=dc6zaTOxFJmzC";
+var url = "https://api.giphy.com/v1/gifs/search?q="+inputt.value+"&api_key=dc6zaTOxFJmzC";
 var container = document.getElementById('container');
     
     inputt.addEventListener('keyup',function(e)
@@ -29,7 +29,7 @@ var container = document.getElementById('container');
       button.addEventListener('click',function(){
         container.innerHTML = null; 
         inputt = document.getElementById('input').value;
-        var url = "http://api.giphy.com/v1/gifs/search?q="+inputt+"&api_key=dc6zaTOxFJmzC";    
+        var url = "https://api.giphy.com/v1/gifs/search?q="+inputt+"&api_key=dc6zaTOxFJmzC";    
 
         var GiphyAJAXCall = new XMLHttpRequest();
         GiphyAJAXCall.open( 'GET', url );
